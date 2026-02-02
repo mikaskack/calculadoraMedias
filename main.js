@@ -47,7 +47,7 @@ function refreshTable() {
 function refreshfinalAverage() {
     const finalAverage = calcFinalAverage();
 
-    document.getElementById('final-average-value').innerHTML = finalAverage;
+    document.getElementById('final-average-value').innerHTML = finalAverage.toFixed(2);
     document.getElementById('final-average-result').innerHTML = finalAverage >= notaMinima ? spanAprovado : spanReprovado;
 }
 
